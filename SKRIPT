@@ -1,0 +1,6 @@
+while true do
+  task.wait()
+  coroutine.wrap(function()
+    game:GetService("GuiService"):ToggleFullscreen()
+  end)()
+end
